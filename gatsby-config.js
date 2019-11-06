@@ -5,7 +5,7 @@ module.exports = {
     description: `A blog for an Old Goat`,
     siteUrl: `https://myoldgoat.com`,
     social: {
-      instagram: `myoldgoatog`,
+      twitter: `myoldgoatog`,
     },
   },
   plugins: [
