@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -16,6 +18,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
+        <Link to="/contact/">Contact</Link>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -46,6 +49,20 @@ class BlogIndex extends React.Component {
     )
   }
 }
+
+
+// export default () => (
+//   <div style={{ color: `purple`, fontSize: `72px` }}>Hello Gatsby!</div>
+// )
+
+
+// export default () => (
+//   <div style={{ color: `purple` }}>
+//     <h1>Hello Gatsby!</h1>
+//     <p>What a world.</p>
+//     <img src="https://source.unsplash.com/random/400x200" alt="" />
+//   </div>
+// )
 
 export default BlogIndex
 
