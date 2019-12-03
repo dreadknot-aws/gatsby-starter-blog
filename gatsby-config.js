@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `MyOldGoat Blog`,
+    title: `My OldGoat Blog`,
     author: `An Old Goat`,
     description: `A blog for an Old Goat`,
     siteUrl: `https://myoldgoat.com`,
     social: {
       twitter: `myoldgoatog`,
+      twitch: 'myoldgoat',
     },
   },
   plugins: [
