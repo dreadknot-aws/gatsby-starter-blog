@@ -1,3 +1,11 @@
 html {
     background-color: rgb(0, 0, 0);
   }
+
+body {
+  color: goldenrod;
+}
+
+a {
+  color: teal;
+}
