@@ -64,7 +64,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/image0.png`,
       },
     },
     `gatsby-plugin-offline`,
@@ -73,6 +73,13 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-source-twitch`,
+      options: {
+        userID: '91333798',
+        clientID: 'te14swqd5wv6pvxbzrybxnh4h9fp6l'
       },
     },
   ],
