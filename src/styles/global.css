@@ -8,4 +8,6 @@ body {
 
 a {
   color: teal;
+  text-decoration-style: solid;
+  text-decoration-line: none;
 }

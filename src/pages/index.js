@@ -44,7 +44,6 @@ class BlogIndex extends React.Component {
             </article>
           )
         })}
-      <Link to="/shows/">Shows</Link>
       {` `}
       <Link to="/contact/">Contact</Link>
       </Layout>

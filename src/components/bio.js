@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
@@ -38,7 +38,7 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        marginBottom: rhythm(1),
       }}
     >
       <Image
@@ -54,19 +54,42 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
+      <div style={{
+        display: 'block',
+    }}
+    >
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco playing games and listening to the Jam O's.
-        {` `}
+        Mostly games and music - the SF Bay Area
+      </p>
+      <div style={{
+        display: 'flex',
+      }}
+      >
+          <p style={{
+            display: 'flex',
+            margin: rhythm(.5),
+          }}>
         <a href={`https://www.twitch.tv/${social.twitch}`}>
-          You should watch him on Twitch
-        </a>
-        {' '}
-        <a href={`https://instagram.com/${social.twitter}`}>
-          You should follow him on Instagram
+          Twitch
         </a>
       </p>
-    </div>
+          <p style={{
+            display: 'flex',
+            margin: rhythm(.5),
+          }}>
+      <a href={`https://instagram.com/${social.twitter}`}>
+        Instagram
+        </a>
+      </p>
+          <p style={{
+            display: 'flex',
+            margin: rhythm(.5),
+          }}>
+          <Link to="/shows/">Shows</Link>
+          </p>
+      </div>
+      </div>
+    </div> 
   )
 }
 
