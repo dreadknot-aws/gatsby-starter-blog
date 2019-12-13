@@ -1,10 +1,11 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Container from "../components/container"
+import Layout from "../components/layout"
 
 export default ({ data }) => (
-  <Container>
-    <h1>Videos</h1>
+  <Layout location='myoldgoat' title='myoldgoat'>
+    <Container>
     <div>
         <h1>Shows</h1>
         <table>
@@ -26,7 +27,8 @@ export default ({ data }) => (
           </tbody>
         </table>
       </div>
-  </Container>
+    </Container>
+  </Layout>
 )
 export const query = graphql`
   query {
