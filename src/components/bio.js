@@ -67,18 +67,18 @@ const Bio = () => {
       }}
       >
           <div>
+            <Link to="/shows/">Shows</Link>
+          </div>
+          <div>
+            <a href={`https://instagram.com/${social.twitter}`}>
+              Instagram
+        </a>
+          </div>
+          <div>
         <a href={`https://www.twitch.tv/${social.twitch}`}>
           Twitch
         </a>
       </div>
-          <div>
-      <a href={`https://instagram.com/${social.twitter}`}>
-        Instagram
-        </a>
-      </div>
-          <div>
-          <Link to="/shows/">Shows</Link>
-          </div>
       </div>
       </div>
     </div> 
