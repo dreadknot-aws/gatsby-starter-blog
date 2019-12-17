@@ -1,7 +1,7 @@
 ---
 title: The Studio
 date: "2019-12-03"
-description: "The Studio"
+description: "show me the gear"
 ---
 A post about the studio.
 Equipment

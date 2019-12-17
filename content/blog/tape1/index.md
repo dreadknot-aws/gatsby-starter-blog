@@ -1,7 +1,7 @@
 ---
-title: Mix Tape #1
+title: "Mix Tape #1"
 date: "2019-12-10"
-description: "Oldgoat Mix tape"
+description: "a myoldgoat mix tape"
 ---
 This is mix tape 1 blog post
 

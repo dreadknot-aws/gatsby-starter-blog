@@ -63,30 +63,22 @@ const Bio = () => {
       </p>
       <div style={{
         display: 'flex',
+        justifyContent: 'space-around'
       }}
       >
-          <p style={{
-            display: 'flex',
-            margin: rhythm(.5),
-          }}>
+          <div>
         <a href={`https://www.twitch.tv/${social.twitch}`}>
           Twitch
         </a>
-      </p>
-          <p style={{
-            display: 'flex',
-            margin: rhythm(.5),
-          }}>
+      </div>
+          <div>
       <a href={`https://instagram.com/${social.twitter}`}>
         Instagram
         </a>
-      </p>
-          <p style={{
-            display: 'flex',
-            margin: rhythm(.5),
-          }}>
+      </div>
+          <div>
           <Link to="/shows/">Shows</Link>
-          </p>
+          </div>
       </div>
       </div>
     </div> 
