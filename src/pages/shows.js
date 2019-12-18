@@ -12,16 +12,19 @@ export default ({ data }) => (
           <thead>
             <tr>
               <th>Title</th>
-              <th>Link</th>
-              <th>Type</th>
+              <th>description</th>
+              {/* <th>Link</th> */}
+              <th>Age</th>
             </tr>
           </thead>
           <tbody>
             {data.allTwitchvideo.edges.map(({ node }, index) => (
               <tr key={index}>
-                <td>{node.title}</td>
-                <td><a href={node.url}>{node.url}</a></td>
-                <td>{node.type}</td>
+                <td><a href={node.url}>{node.title}</a></td>
+                <td>{node.description}</td>
+                {/* <td><a href={node.url}>Watch</a></td> */}
+                <td>{node.published_at}</td>
+                {/* <td>{node.view_count}</td> */}
               </tr>
             ))}
           </tbody>
@@ -36,8 +39,11 @@ export const query = graphql`
       edges {
         node {
           title
+          description
           url
           type
+          published_at(fromNow: true)
+          view_count
         }
       }
     }
