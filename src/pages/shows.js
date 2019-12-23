@@ -14,7 +14,7 @@ export default ({ data }) => (
               <th>Title</th>
               <th>description</th>
               {/* <th>Link</th> */}
-              <th>Age</th>
+              {/* <th>Age</th> */}
             </tr>
           </thead>
           <tbody>
@@ -23,7 +23,7 @@ export default ({ data }) => (
                 <td><a href={node.url}>{node.title}</a></td>
                 <td>{node.description}</td>
                 {/* <td><a href={node.url}>Watch</a></td> */}
-                <td>{node.published_at}</td>
+                {/* <td>{node.published_at}</td> */}
                 {/* <td>{node.view_count}</td> */}
               </tr>
             ))}
@@ -34,20 +34,20 @@ export default ({ data }) => (
   </Layout>
 )
 export const query = graphql`
-  query {
-    allTwitchvideo {
-      edges {
-        node {
-          title
-          description
-          url
-          type
-          published_at(fromNow: true)
-          view_count
-        }
+{
+  allTwitchvideo(sort: {fields: published_at, order: DESC}) {
+    edges {
+      node {
+        title
+        description
+        url
+        type
+        published_at(fromNow: true)
+        view_count
       }
     }
   }
+}
   `
 
 // export const query = graphql`
