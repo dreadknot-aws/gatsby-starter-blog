@@ -7,5 +7,6 @@ author: "dreadknot"
 
 * Focus
 * Golden Earring
+* Excitable Boy - Warren Zevon
 
 [add myoldgoat collection](https://www.discogs.com/developers)
