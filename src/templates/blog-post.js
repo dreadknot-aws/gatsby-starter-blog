@@ -17,6 +17,7 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          author={post.frontmatter.author || "unknown"}
         />
         <article>
           <header>
@@ -36,6 +37,15 @@ class BlogPostTemplate extends React.Component {
               }}
             >
               {post.frontmatter.date}
+            </p>
+            <p
+              style={{
+                ...scale(-1 / 5),
+                display: `block`,
+                marginBottom: rhythm(1),
+              }}
+              >
+              {post.frontmatter.author}
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -98,6 +108,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        author
       }
     }
   }
