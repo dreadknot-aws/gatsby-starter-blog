@@ -36,16 +36,7 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             >
-              {post.frontmatter.date}
-            </p>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-              }}
-              >
-              {post.frontmatter.author}
+              {post.frontmatter.date} - {post.frontmatter.author}
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
