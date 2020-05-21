@@ -18,44 +18,10 @@ export default ({ data }) => (
             </tr>
           </thead>
           <tbody>
-            {data.allTwitchvideo.edges.map(({ node }, index) => (
-              <tr key={index}>
-                <td><a href={node.url}>{node.title}</a></td>
-                <td>{node.description}</td>
-                {/* <td><a href={node.url}>Watch</a></td> */}
-                {/* <td>{node.published_at}</td> */}
-                {/* <td>{node.view_count}</td> */}
-              </tr>
-            ))}
+
           </tbody>
         </table>
       </div>
     </Container>
   </Layout>
 )
-export const query = graphql`
-{
-  allTwitchvideo(sort: {fields: published_at, order: DESC}) {
-    edges {
-      node {
-        title
-        description
-        url
-        type
-        published_at(fromNow: true)
-        view_count
-      }
-    }
-  }
-}
-  `
-
-// export const query = graphql`
-//   query {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-//   `

@@ -76,12 +76,12 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    {
-      resolve: `gatsby-source-twitch`,
-      options: {
-        userID: '91333798',
-        clientID: 'te14swqd5wv6pvxbzrybxnh4h9fp6l'
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-twitch`,
+    //   options: {
+    //     userID: '91333798',
+    //     clientID: 'te14swqd5wv6pvxbzrybxnh4h9fp6l'
+    //   },
+    // },
   ],
 }

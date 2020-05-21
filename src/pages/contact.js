@@ -5,7 +5,7 @@ import Header from "../components/header"
 export default () => (
   <div style={{ 
     color: `teal`,
-    justify-content: center
+    justifyContent: 'center'
   }}>
     <Link to="/">Home</Link>
     <Header headerText="Contact" />
