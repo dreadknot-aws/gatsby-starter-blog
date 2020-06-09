@@ -13,9 +13,9 @@ Leader Election occurs under the full moon.
 
 The Maze Even
 
-Piston vs Pistol
+Pistol vs Pistol
 
-The Maze Split
+The Maze Top vs Bottom
 
 Bow vs Pistol
 Gernade vs Sniper
