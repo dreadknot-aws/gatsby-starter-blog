@@ -10,3 +10,13 @@ Rules for life with MyOldGoat
 His server, his rules.
 
 Leader Election occurs under the full moon.
+
+The Maze Even
+
+Piston vs Pistol
+
+The Maze Split
+
+Bow vs Pistol
+Gernade vs Sniper
+
